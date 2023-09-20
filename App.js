@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended : true})) ;
 
 // using cors
 app.use(cors({
-    origin : ["http://localhost:3000" , "http://localhost:3001"] ,
+    origin : ["https://650add5214afff45e63abbcd--phenomenal-dieffenbachia-7d7de1.netlify.app/" , "https://650ada0580bf48069613b0c4--storied-melomakarona-f61c86.netlify.app/"] ,
     methods : ["GET" , "PUT" , "POST"]
 })) ;
 
@@ -25,7 +25,7 @@ const server = http.createServer(app) ;
 
 const io = new Server(server , {
     cors : {
-        origin : ["http://localhost:3000" , "http://localhost:3001"] ,
+        origin : ["https://650add5214afff45e63abbcd--phenomenal-dieffenbachia-7d7de1.netlify.app/" , "https://650ada0580bf48069613b0c4--storied-melomakarona-f61c86.netlify.app/"] ,
         credentials : true
     }
 }) ;
